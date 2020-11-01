@@ -1,5 +1,7 @@
 # Speedometer
 
+[Demo](https://logivad.github.io/speedometer/)
+
 Build a single html page showing a speedometer with variant speeds that change every few seconds to a random value.
 1. The speed value should change every 4 seconds.
 2. The random value would be between 0 and 180
