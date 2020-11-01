@@ -8,11 +8,11 @@ export const maxDegree = 120;
 export const meterPalette = [
     {
         color: '#008000cc',
-        range: [0, 60],
+        range: [0, 61],
     },
     {
         color: '#ffa500cc',
-        range: [61, 120],
+        range: [61, 121],
     },
     {
         color: '#f00c',
@@ -39,7 +39,7 @@ export class SpeedometerService {
         meterPalette.forEach(paletteItem => {
             const [minRange, maxRange] = paletteItem.range;
 
-            if (speed >= minRange && speed <= maxRange) {
+            if (speed >= minRange && speed < maxRange) {
                 color = paletteItem.color;
             }
         });
