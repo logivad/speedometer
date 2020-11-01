@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {LibModule} from '../../../lib/src/lib/lib.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +9,6 @@ import {LibModule} from '../../../lib/src/lib/lib.module';
   ],
   imports: [
     BrowserModule,
-    LibModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

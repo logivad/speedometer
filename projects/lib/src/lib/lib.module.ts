@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { LibComponent } from './lib.component';
+import {SpeedometerModule} from './speedometer/speedometer.module';
 
-
+export * from './speedometer/speedometer.module';
 
 @NgModule({
-  declarations: [LibComponent],
+  declarations: [],
   imports: [
+    SpeedometerModule,
   ],
-  exports: [LibComponent]
+  exports: [
+    SpeedometerModule
+  ]
 })
 export class LibModule { }
