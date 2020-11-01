@@ -1,3 +1,39 @@
 <h1>Speedometer</h1>
 
-<lib-speedometer></lib-speedometer>
+<p>
+    <label>
+        Enter desired speed:
+        <input id="speed-input" type="number" min="0" max="180" [(ngModel)]="speed" />
+    </label>
+</p>
+
+<p>Or choose from the options below:</p>
+
+<p class="speeds">
+    <button (click)="speed = -10">-10</button>
+
+    <button class="green" (click)="speed = 0">0</button>
+    <button class="green" (click)="speed = 60">60</button>
+
+    <button class="orange" (click)="speed = 61">61</button>
+    <button class="orange" (click)="speed = 90">90</button>
+    <button class="orange" (click)="speed = 120">120</button>
+
+    <button class="red" (click)="speed = 121">121</button>
+    <button class="red" (click)="speed = 180">180</button>
+
+    <button (click)="speed = 190">190</button>
+</p>
+
+<p>
+    Or just watch. The speed will change every 4 seconds.
+</p>
+
+<p>
+    <label>
+        <input type="checkbox" [(ngModel)]="speedAutoChange">
+        Change speed automatically
+    </label>
+</p>
+
+<lib-speedometer [speed]="speed"></lib-speedometer>

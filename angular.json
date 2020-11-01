@@ -163,9 +163,10 @@
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
-    "analytics": "ea8779ca-f4bc-4197-8bdb-5a37527a3e0d"
+    "analytics": "e8a85192-3569-4a88-a990-b5e1cc159bcf"
   },
   "defaultProject": "sandbox"
 }
