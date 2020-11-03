@@ -7,15 +7,15 @@ export const maxDegree = 120;
 
 export const meterPalette = [
     {
-        color: '#008000cc',
+        color: '#00800033',
         range: [0, 61],
     },
     {
-        color: '#ffa500cc',
+        color: '#ffa50033',
         range: [61, 121],
     },
     {
-        color: '#f00c',
+        color: '#f003',
         range: [121, 181],
     },
 ];
